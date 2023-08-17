@@ -13,6 +13,8 @@
  *  limitations under the License.
  */
 
+//#undef THRUST_CUB_WRAPPED_NAMESPACE
+
 #ifndef STDGPU_UTILITY_H
 #define STDGPU_UTILITY_H
 

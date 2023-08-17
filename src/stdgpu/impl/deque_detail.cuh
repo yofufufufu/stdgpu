@@ -368,7 +368,8 @@ deque<T, Allocator>::pop_front()
     // Preemptive check
     if (empty())
     {
-        printf("stdgpu::deque::pop_front : Object empty\n");
+        // comment warning
+//        printf("stdgpu::deque::pop_front : Object empty\n");
         return popped;
     }
 
@@ -404,7 +405,8 @@ deque<T, Allocator>::pop_front()
     }
     else
     {
-        printf("stdgpu::deque::pop_front : Unable to pop element from empty queue\n");
+        // comment warning
+//        printf("stdgpu::deque::pop_front : Unable to pop element from empty queue\n");
     }
 
     return popped;
@@ -433,10 +435,11 @@ deque<T, Allocator>::size() const
     // Check boundary cases where the push/pop caused the pointers to be overful/underful
     if (current_size < 0)
     {
-        printf("stdgpu::deque::size : Size out of bounds: %" STDGPU_PRIINDEX " not in [0, %" STDGPU_PRIINDEX
-               "]. Clamping to 0\n",
-               current_size,
-               capacity());
+        // comment warning
+//        printf("stdgpu::deque::size : Size out of bounds: %" STDGPU_PRIINDEX " not in [0, %" STDGPU_PRIINDEX
+//               "]. Clamping to 0\n",
+//               current_size,
+//               capacity());
         return 0;
     }
     if (current_size > capacity())
